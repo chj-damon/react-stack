@@ -27,6 +27,9 @@
     "react-test-renderer": "^16.2.0"
   },
   "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint"
+    ],
     "src/**/*.{js,jsx,json,css}": [
       "prettier --single-quote --write",
       "git add"
