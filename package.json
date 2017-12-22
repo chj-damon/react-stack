@@ -26,13 +26,16 @@
     "react-scripts": "1.0.17",
     "react-test-renderer": "^16.2.0"
   },
-  "list-staged": {
+  "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
       "prettier --single-quote --write",
       "git add"
     ],
     "public/**/*.{jpg,css,png,ico,json}": [
       "git add"
+    ],
+    "src/**/*.js": [
+      "test"
     ]
   },
   "scripts": {
