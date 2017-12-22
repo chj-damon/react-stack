@@ -9,17 +9,16 @@ import store from './mobx/TodoStore';
 
 import ErrorBundary from './react16/ErrorBundary';
 import ErrorHandlerHoc from './react16/ErrorHandlerHoc';
-
 import MultipleElementsWithoutWrapper from './react16/MultipleElementsWithoutWrapper';
-
 import TextOnlyComponent from './react16/TextOnlyComponent';
-
 import Portal from './react16/Portal';
 import Overlay from './react16/Overlay';
-
 import DOMAttribute from './react16/DOMAttribute';
-
 import SetStateNullAvoidReRender from './react16/SetStateNullAvoidReRender';
+
+import Router from './react-router-v4/Router01';
+import RouterDynamic from './react-router-v4/Router-dynamic';
+import RouterAuth from './react-router-v4/Router-auth';
 
 class App extends PureComponent {
   handleClick = async () => {
@@ -62,7 +61,11 @@ class App extends PureComponent {
         {/* <Portal /> */}
         {/* <Overlay /> */}
         {/* <DOMAttribute /> */}
-        <SetStateNullAvoidReRender />
+        {/* <SetStateNullAvoidReRender /> */}
+
+        {/* <Router /> */}
+        {/* <RouterDynamic /> */}
+        <RouterAuth />
       </div>
     );
   }
