@@ -6,14 +6,21 @@ import React from 'react';
  * 所以，事件必须是传入一个函数而不能是字符串。
  */
 class DOMAttribute extends React.Component {
-    getSelfAttribute = (e) => {
-        console.log(e.target.getAttribute('my-attribute'));
-    }
-    render() {
-        return (
-            <button my-attribute="123" tabIndex="1" className="hello" onClick={this.getSelfAttribute}>DOM Attribute</button>
-        );
-    }
+  getSelfAttribute = e => {
+    console.log(e.target.getAttribute('my-attribute'));
+  };
+  render() {
+    return (
+      <button
+        my-attribute="123"
+        tabIndex="1"
+        className="hello"
+        onClick={this.getSelfAttribute}
+      >
+        DOM Attribute
+      </button>
+    );
+  }
 }
 
 export default DOMAttribute;
